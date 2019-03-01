@@ -1,4 +1,12 @@
 import React, { Component } from 'react';
+import './assets/css/bulma.css';
+import './assets/css/core.css';
+import './assets/fonts/cryptofont/css/cryptofont.min.css';
+import './assets/js/modalvideo/modal-video.min.css';
+import './assets/js/aos/aos.css'
+
+
+
 
 class Home extends Component {
   render() {
@@ -6,7 +14,7 @@ class Home extends Component {
       <div className="Home">
      {/* <!-- Pageloader --> */}
         <div className="pageloader is-theme"></div>
-        <div className="infraloader is-active"></div>        
+        <div className="infraloader is-active" style={{backgroundColor:'transparent'}}></div>        
         <div className="dark-wrapper">
             {/* <!-- Landing page Hero --> */}
             <section className="hero is-fullheight is-transparent">
@@ -19,7 +27,7 @@ class Home extends Component {
                             {/* <!-- Brand --> */}
                             <div className="navbar-brand">
                                 <a href="index.html" className="navbar-item">
-                                    <img className="rotating" src="assets/images/logo/krypton-gradient.svg" alt=""/>
+                                    <img className="rotating"  src={require("./assets/images/logo/krypton-gradient.svg")} alt=""/>
                                     <span className="brand-name">Krypton</span>
                                 </a>
                                 {/* <!-- Responsive toggle --> */}
@@ -150,7 +158,7 @@ class Home extends Component {
                             {/* <!-- Hero image --> */}
                             <div className="column is-7">
                                 <figure className="image">
-                                    <img src="assets/images/illustrations/buildings.svg" alt=""/>
+                                    <img src={require("./assets/images/illustrations/buildings.svg")} alt=""/>
                                 </figure>
                             </div>
                         </div>
@@ -208,7 +216,7 @@ class Home extends Component {
                             {/* <!-- Feature --> */}
                             <div className="column is-4">
                                 <div className="feature">
-                                    <img src="assets/images/icons/chained.svg" alt="" data-aos="fade-up" data-aos-delay="100" data-aos-offset="200" data-aos-easing="ease-out-quart">
+                                    <img src="assets/images/icons/chained.svg" alt="" data-aos="fade-up" data-aos-delay="100" data-aos-offset="200" data-aos-easing="ease-out-quart"/>
                                     <h4 className="title is-6 is-tight is-light">Chaining</h4>
                                     <p>Supercharged features to make you happy and lorem ipsum sit dolor amet</p>
                                 </div>
@@ -262,7 +270,7 @@ class Home extends Component {
                             <div className="column is-5 is-offset-1">
                                 <div className="side-feature-content">
         
-                                    <h3 className="title is-4 is-light"><img src="assets/images/icons/ico/bitbanner.svg" alt=""> <span>Token Building</span></h3>
+                                    <h3 className="title is-4 is-light"><img src="assets/images/icons/ico/bitbanner.svg" alt=""/> <span>Token Building</span></h3>
                                     <div className="divider is-long"></div>
                                     <p className="is-light">Viderer malorum sadipscing cum ei. Eu impetus perfecto sit, no sea labore detraxit. Primis mediocrem necessitatibus an vis. Eu impetus perfecto sit, no sea labore detraxit.</p>
                                     <div className="cta-wrapper">
@@ -290,7 +298,7 @@ class Home extends Component {
                             <div className="column is-5">
                                 <div className="side-feature-content">
         
-                                    <h3 className="title is-4 is-light"><img src="assets/images/icons/ico/bitnetwork.svg" alt=""> <span>Cascading Blockchain</span></h3>
+                                    <h3 className="title is-4 is-light"><img src="assets/images/icons/ico/bitnetwork.svg" alt=""/> <span>Cascading Blockchain</span></h3>
                                     <div className="divider is-long"></div>
                                     <p className="is-light">Viderer malorum sadipscing cum ei. Eu impetus perfecto sit, no sea labore detraxit. Primis mediocrem necessitatibus an vis. Eu impetus perfecto sit, no sea labore detraxit.</p>
                                     <div className="cta-wrapper">
@@ -313,7 +321,7 @@ class Home extends Component {
                             <div className="column is-5 is-offset-1">
                                 <div className="side-feature-content">
         
-                                    <h3 className="title is-4 is-light"><img src="assets/images/icons/ico/bitmining.svg" alt=""> <span>Crypto Farming</span></h3>
+                                    <h3 className="title is-4 is-light"><img src="assets/images/icons/ico/bitmining.svg" alt=""/> <span>Crypto Farming</span></h3>
                                     <div className="divider is-long"></div>
                                     <p className="is-light">Viderer malorum sadipscing cum ei. Eu impetus perfecto sit, no sea labore detraxit. Primis mediocrem necessitatibus an vis. Eu impetus perfecto sit, no sea labore detraxit.</p>
                                     <div className="cta-wrapper">
@@ -524,7 +532,7 @@ class Home extends Component {
                                                 <ul className="custom-bullet-list">
                                                     <li className="animated preFadeInUp fadeInUp">
                                                         <span>Tokens Sales</span>
-                                                        <br>
+                                                        <br/>
                                                         <span className="item-content">1 200 000 KP (22%)</span>
                                                     </li>
                                                     <li className="animated preFadeInUp fadeInUp">
@@ -666,8 +674,10 @@ class Home extends Component {
                                 <ul className="timeline-navigation">
                                     <li><a href="#0" className="prev inactive">Prev</a></li>
                                     <li><a href="#0" className="next">Next</a></li>
-                                </ul> <!-- .cd-timeline-navigation -->
-                            </div> <!-- .timeline -->
+                                </ul> 
+                                {/* <!-- .cd-timeline-navigation --> */}
+                            </div> 
+                            {/* <!-- .timeline --> */}
         
                             {/* <!-- Main events content --> */}
                             <div className="events-content">
@@ -881,7 +891,7 @@ class Home extends Component {
                                 {/* <!-- Side feature --> */}
                                 <div className="side-feature-content">
                                     {/* <!-- Title --> */}
-                                    <h3 className="title is-4 is-light"><img src="assets/images/icons/ico/bitnetwork.svg" alt=""> <span>Track everything with the App</span></h3>
+                                    <h3 className="title is-4 is-light"><img src="assets/images/icons/ico/bitnetwork.svg" alt=""/> <span>Track everything with the App</span></h3>
                                     {/* <!-- Divider --> */}
                                     <div className="divider is-long"></div>
                                     <p className="is-light">Viderer malorum sadipscing cum ei. Eu impetus perfecto sit, no sea labore detraxit. Primis mediocrem necessitatibus an vis. Eu impetus perfecto sit, no sea labore detraxit.</p>
@@ -1048,10 +1058,10 @@ class Home extends Component {
                                 <div className="team-member-container">
                                     <div className="dark-card">
                                         <div className="avatar">
-                                            <svg className="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="140" height="140" xmlns="http://www.w3.org/2000/svg"/>
+                                            {/* <svg className="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="140" height="140" xmlns="http://www.w3.org/2000/svg"/>
                                                 <circle className="circle-chart-background" stroke-width="1" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
                                                 <circle className="circle-chart-circle" stroke-width="1" stroke-dasharray="33,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
-                                            </svg>
+                                            </svg> */}
                                             <img className="is-sketch" src="assets/images/team/sandra.svg" alt=""/>
                                             <img className="is-real" src="assets/images/team/sandra.jpg" alt=""/>
                                         </div>
@@ -1083,7 +1093,7 @@ class Home extends Component {
                                     <div className="advisor-container has-text-centered">
                                         {/* <!-- Picture --> */}
                                         <div className="photo">
-                                            <img src="assets/images/team/a1.jpg" alt="" data-aos="fade-down" data-aos-delay="100" data-aos-offset="200" data-aos-easing="ease-out-quart"/>
+                                            <img  src={require("./assets/images/team/a1.jpg")} alt="" data-aos="fade-down" data-aos-delay="100" data-aos-offset="200" data-aos-easing="ease-out-quart"/>
                                         </div>
                                         {/* <!-- Meta --> */}
                                         <div className="info">
@@ -1586,7 +1596,7 @@ class Home extends Component {
                 </div>
                 {/* <!-- Copyright --> */}
                 <p className="k-copyright">© 2018 | Krypton. All Rights Reserved</p>
-                <br>
+                <br/>
                 {/* <!-- Made by --> */}
                 <p className="coded-by">Designed and Coded by <a href="https://cssninja.io" target="_blank">Css Ninja</a></p>
             </div>
