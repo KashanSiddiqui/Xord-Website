@@ -4,12 +4,19 @@ import './assets/css/core.css';
 import './assets/fonts/cryptofont/css/cryptofont.min.css';
 import './assets/js/modalvideo/modal-video.min.css';
 import './assets/js/aos/aos.css'
+//import AOS from 'aos';
 
 
 
-
+// class App extends React.Component {
+//   constructor(props){
+//     super(props);
+//   }
+  
 class Home extends Component {
+    
   render() {
+      //AOS.init()
     return (
       <div className="Home">
      {/* <!-- Pageloader --> */}
@@ -59,7 +66,7 @@ class Home extends Component {
                                     {/* <!-- Menu item --> */}
                                     <div className="navbar-item is-nav-link">
                                         <a className="is-centered-responsive" href="#" target="_blank">
-                                            <img className="telegram" src="assets/images/logo/telegram.svg" alt=""/>
+                                            <img className="telegram" src={require("./assets/images/logo/telegram.svg")} alt=""/>
                                             Telegram
                                         </a>
                                     </div>
@@ -82,7 +89,7 @@ class Home extends Component {
                             {/* <!-- Brand --> */}
                             <div className="navbar-brand">
                                 <a href="index.html" className="navbar-item">
-                                    <img className="rotating" src="assets/images/logo/krypton.svg" alt=""/>
+                                    <img className="rotating" src={require("./assets/images/logo/krypton.svg")} alt=""/>
                                     <span className="brand-name">Krypton</span>
                                 </a>
                                 {/* <!-- Responsive toggle --> */}
@@ -114,7 +121,7 @@ class Home extends Component {
                                     {/* <!-- Menu item --> */}
                                     <div className="navbar-item is-nav-link">
                                         <a className="is-centered-responsive" href="#" target="_blank">
-                                            <img className="telegram" src="assets/images/logo/telegram.svg" alt=""/>
+                                            <img className="telegram" src={require("./assets/images/logo/telegram.svg")} alt=""/>
                                             Telegram
                                         </a>
                                     </div>
@@ -171,9 +178,9 @@ class Home extends Component {
                         <div className="tabs is-centered">
                             {/* <!-- Client / partner list --> */}
                             <ul>
-                                <li><a><img className="hero-logo" src="assets/images/clients/cryptomarket.svg" alt=""/></a></li>
-                                <li><a><img className="hero-logo" src="assets/images/clients/bitit.svg" alt=""/></a></li>
-                                <li><a><img className="hero-logo" src="assets/images/clients/coin.svg" alt=""/></a></li>
+                                <li><a><img className="hero-logo" src={require("./assets/images/clients/cryptomarket.svg")} alt=""/></a></li>
+                                <li><a><img className="hero-logo" src={require("./assets/images/clients/bitit.svg")} alt=""/></a></li>
+                                <li><a><img className="hero-logo" src={require("./assets/images/clients/coin.svg")} alt=""/></a></li>
                             </ul>
                         </div>
                     </div>
@@ -216,7 +223,7 @@ class Home extends Component {
                             {/* <!-- Feature --> */}
                             <div className="column is-4">
                                 <div className="feature">
-                                    <img src="assets/images/icons/chained.svg" alt="" data-aos="fade-up" data-aos-delay="100" data-aos-offset="200" data-aos-easing="ease-out-quart"/>
+                                    <img src={require("./assets/images/icons/chained.svg")} alt="" data-aos="fade-up" data-aos-delay="100" data-aos-offset="200" data-aos-easing="ease-out-quart"/>
                                     <h4 className="title is-6 is-tight is-light">Chaining</h4>
                                     <p>Supercharged features to make you happy and lorem ipsum sit dolor amet</p>
                                 </div>
@@ -224,7 +231,7 @@ class Home extends Component {
                             {/* <!-- Feature --> */}
                             <div className="column is-4">
                                 <div className="feature">
-                                    <img src="assets/images/icons/stacked.svg" alt="" data-aos="fade-up" data-aos-delay="300" data-aos-offset="200" data-aos-easing="ease-out-quart"/>
+                                    <img src={require("./assets/images/icons/stacked.svg")} alt="" data-aos="fade-up" data-aos-delay="300" data-aos-offset="200" data-aos-easing="ease-out-quart"/>
                                     <h4 className="title is-6 is-tight is-light">Stacking</h4>
                                     <p>Supercharged features to make you happy and lorem ipsum sit dolor amet</p>
                                 </div>
@@ -232,7 +239,7 @@ class Home extends Component {
                             {/* <!-- Feature --> */}
                             <div className="column is-4">
                                 <div className="feature">
-                                    <img src="assets/images/icons/compact.svg" alt="" data-aos="fade-up" data-aos-delay="500" data-aos-offset="200" data-aos-easing="ease-out-quart"/>
+                                    <img src={require("./assets/images/icons/compact.svg")} alt="" data-aos="fade-up" data-aos-delay="500" data-aos-offset="200" data-aos-easing="ease-out-quart"/>
                                     <h4 className="title is-6 is-tight is-light">Managing</h4>
                                     <p>Supercharged features to make you happy and lorem ipsum sit dolor amet</p>
                                 </div>
@@ -242,7 +249,7 @@ class Home extends Component {
                         {/* <!-- Play video button --> */}
                         <div className="cta-wrapper has-text-centered">
                             <div className="video-button levitate js-modal-btn" data-video-id="6WG7D47tGb0">
-                                <img src="assets/images/icons/play.svg" alt=""/>
+                                <img src={require("./assets/images/icons/play.svg")} alt=""/>
                             </div>
                         </div>
                     </div>
@@ -270,7 +277,7 @@ class Home extends Component {
                             <div className="column is-5 is-offset-1">
                                 <div className="side-feature-content">
         
-                                    <h3 className="title is-4 is-light"><img src="assets/images/icons/ico/bitbanner.svg" alt=""/> <span>Token Building</span></h3>
+                                    <h3 className="title is-4 is-light"><img src={require("./assets/images/icons/ico/bitbanner.svg")} alt=""/> <span>Token Building</span></h3>
                                     <div className="divider is-long"></div>
                                     <p className="is-light">Viderer malorum sadipscing cum ei. Eu impetus perfecto sit, no sea labore detraxit. Primis mediocrem necessitatibus an vis. Eu impetus perfecto sit, no sea labore detraxit.</p>
                                     <div className="cta-wrapper">
@@ -284,21 +291,21 @@ class Home extends Component {
         
                             {/* <!-- Feature image --> */}
                             <div className="column is-7">
-                                <img className="side-feature" src="assets/images/illustrations/token.svg" alt=""/>
+                                <img className="side-feature" src={require("./assets/images/illustrations/token.svg")} alt=""/>
                             </div>
                         </div>
         
                         <div className="columns is-vcentered">
                             {/* <!-- Feature image desktop --> */}
                             <div className="column is-7 is-hidden-mobile">
-                                <img className="side-feature" src="assets/images/illustrations/blockchain-blocks.svg" alt=""/>
+                                <img className="side-feature" src={require("./assets/images/illustrations/blockchain-blocks.svg")} alt=""/>
                             </div>
         
                             {/* <!-- Feature content --> */}
                             <div className="column is-5">
                                 <div className="side-feature-content">
         
-                                    <h3 className="title is-4 is-light"><img src="assets/images/icons/ico/bitnetwork.svg" alt=""/> <span>Cascading Blockchain</span></h3>
+                                    <h3 className="title is-4 is-light"><img src={require("./assets/images/icons/ico/bitnetwork.svg")} alt=""/> <span>Cascading Blockchain</span></h3>
                                     <div className="divider is-long"></div>
                                     <p className="is-light">Viderer malorum sadipscing cum ei. Eu impetus perfecto sit, no sea labore detraxit. Primis mediocrem necessitatibus an vis. Eu impetus perfecto sit, no sea labore detraxit.</p>
                                     <div className="cta-wrapper">
@@ -312,7 +319,7 @@ class Home extends Component {
         
                             {/* <!-- Feature image only for mobile --> */}
                             <div className="column is-7 is-hidden-desktop is-hidden-tablet">
-                                <img className="side-feature" src="assets/images/illustrations/blockchain-blocks.svg" alt=""/>
+                                <img className="side-feature" src={require("./assets/images/illustrations/blockchain-blocks.svg")} alt=""/>
                             </div>
                         </div>
         
@@ -321,7 +328,7 @@ class Home extends Component {
                             <div className="column is-5 is-offset-1">
                                 <div className="side-feature-content">
         
-                                    <h3 className="title is-4 is-light"><img src="assets/images/icons/ico/bitmining.svg" alt=""/> <span>Crypto Farming</span></h3>
+                                    <h3 className="title is-4 is-light"><img src={require("./assets/images/icons/ico/bitmining.svg")} alt=""/> <span>Crypto Farming</span></h3>
                                     <div className="divider is-long"></div>
                                     <p className="is-light">Viderer malorum sadipscing cum ei. Eu impetus perfecto sit, no sea labore detraxit. Primis mediocrem necessitatibus an vis. Eu impetus perfecto sit, no sea labore detraxit.</p>
                                     <div className="cta-wrapper">
@@ -335,7 +342,7 @@ class Home extends Component {
         
                             {/* <!-- Feature image --> */}
                             <div className="column is-7">
-                                <img className="side-feature" src="assets/images/illustrations/crypto-mining.svg" alt=""/>
+                                <img className="side-feature" src={require("./assets/images/illustrations/crypto-mining.svg")} alt=""/>
                             </div>
                         </div>
                     </div>
@@ -482,7 +489,7 @@ class Home extends Component {
                                         </div>
                                         {/* <!-- Tab image --> */}
                                         <div className="column is-5">
-                                            <img className="animated preFadeInUp fadeInUp" src="assets/images/illustrations/tokens.svg" alt=""/>
+                                            <img className="animated preFadeInUp fadeInUp" src={require("./assets/images/illustrations/tokens.svg")} alt=""/>
                                         </div>
                                     </div>
                                 </div>
@@ -516,7 +523,7 @@ class Home extends Component {
                                         </div>
                                         {/* <!-- Tab image --> */}
                                         <div className="column is-5">
-                                            <img className="animated preFadeInUp fadeInUp" src="assets/images/illustrations/charts.svg" alt=""/>
+                                            <img className="animated preFadeInUp fadeInUp" src={require("./assets/images/illustrations/charts.svg")} alt=""/>
                                         </div>
                                     </div>
                                 </div>
@@ -550,7 +557,7 @@ class Home extends Component {
                                         </div>
                                         {/* <!-- Tab image --> */}
                                         <div className="column is-5">
-                                            <img className="animated preFadeInUp fadeInUp" src="assets/images/illustrations/bounty.svg" alt=""/>
+                                            <img className="animated preFadeInUp fadeInUp" src={require("./assets/images/illustrations/bounty.svg")} alt=""/>
                                         </div>
                                     </div>
                                 </div>
@@ -688,7 +695,7 @@ class Home extends Component {
                                         <div className="inner-wrapper">
                                             <div className="title-wrapper">
                                                 {/* <!-- Icon --> */}
-                                                <img src="assets/images/icons/ico/platform-launch.svg" alt=""/>
+                                                <img src={require("./assets/images/icons/ico/platform-launch.svg")} alt=""/>
                                                 {/* <!-- Title & date --> */}
                                                 <div>
                                                     <span className="event-title">Platform Launch</span>
@@ -705,7 +712,7 @@ class Home extends Component {
                                     <li data-date="28/02/2018">
                                         <div className="inner-wrapper">
                                             <div className="title-wrapper">
-                                                <img src="assets/images/icons/ico/presale.svg" alt=""/>
+                                                <img src={require("./assets/images/icons/ico/presale.svg")} alt=""/>
                                                 <div>
                                                     <span className="event-title">Presale starts</span>
                                                     <small>February 28th, 2018</small>
@@ -721,7 +728,7 @@ class Home extends Component {
                                     <li data-date="20/03/2018">
                                         <div className="inner-wrapper">
                                             <div className="title-wrapper">
-                                                <img src="assets/images/icons/ico/ico.svg" alt=""/>
+                                                <img src={require("./assets/images/icons/ico/ico.svg")} alt=""/>
                                                 <div>
                                                     <span className="event-title">ICO starts</span>
                                                     <small>February 28th, 2018</small>
@@ -737,7 +744,7 @@ class Home extends Component {
                                     <li data-date="20/04/2018">
                                         <div className="inner-wrapper">
                                             <div className="title-wrapper">
-                                                <img src="assets/images/icons/ico/ico-2.svg" alt=""/>
+                                                <img src={require("./assets/images/icons/ico/ico-2.svg")} alt=""/>
                                                 <div>
                                                     <span className="event-title">ICO Phase 2</span>
                                                     <small>April 20th, 2018</small>
@@ -753,7 +760,7 @@ class Home extends Component {
                                     <li data-date="09/05/2018">
                                         <div className="inner-wrapper">
                                             <div className="title-wrapper">
-                                                <img src="assets/images/icons/ico/development.svg" alt=""/>
+                                                <img src={require("./assets/images/icons/ico/development.svg")} alt=""/>
                                                 <div>
                                                     <span className="event-title">Development starts</span>
                                                     <small>May 9th, 2018</small>
@@ -769,7 +776,7 @@ class Home extends Component {
                                     <li data-date="30/06/2018">
                                         <div className="inner-wrapper">
                                             <div className="title-wrapper">
-                                                <img src="assets/images/icons/ico/community.svg" alt=""/>
+                                                <img src={require("./assets/images/icons/ico/community.svg")} alt=""/>
                                                 <div>
                                                     <span className="event-title">Krypton Meetup CA</span>
                                                     <small>June 30th, 2018</small>
@@ -785,7 +792,7 @@ class Home extends Component {
                                     <li data-date="25/07/2018">
                                         <div className="inner-wrapper">
                                             <div className="title-wrapper">
-                                                <img src="assets/images/icons/ico/wallet.svg" alt=""/>
+                                                <img src={require("./assets/images/icons/ico/wallet.svg")} alt=""/>
                                                 <div>
                                                     <span className="event-title">Krypton Wallet release</span>
                                                     <small>July 25th, 2018</small>
@@ -801,7 +808,7 @@ class Home extends Component {
                                     <li data-date="12/08/2018">
                                         <div className="inner-wrapper">
                                             <div className="title-wrapper">
-                                                <img src="assets/images/icons/ico/blockchain.svg" alt=""/>
+                                                <img src={require("./assets/images/icons/ico/blockchain.svg")} alt=""/>
                                                 <div>
                                                     <span className="event-title">Chain Alpha release</span>
                                                     <small>Agust 12th, 2018</small>
@@ -817,7 +824,7 @@ class Home extends Component {
                                     <li data-date="10/09/2018">
                                         <div className="inner-wrapper">
                                             <div className="title-wrapper">
-                                                <img src="assets/images/icons/ico/coins.svg" alt=""/>
+                                                <img src={require("./assets/images/icons/ico/coins.svg")} alt=""/>
                                                 <div>
                                                     <span className="event-title">Token Sale</span>
                                                     <small>September 10th, 2018</small>
@@ -833,7 +840,7 @@ class Home extends Component {
                                     <li data-date="15/10/2018">
                                         <div className="inner-wrapper">
                                             <div className="title-wrapper">
-                                                <img src="assets/images/icons/ico/security.svg" alt=""/>
+                                                <img src={require("./assets/images/icons/ico/security.svg")} alt=""/>
                                                 <div>
                                                     <span className="event-title">Security Audit</span>
                                                     <small>October 15th, 2018</small>
@@ -849,7 +856,7 @@ class Home extends Component {
                                     <li data-date="25/11/2018">
                                         <div className="inner-wrapper">
                                             <div className="title-wrapper">
-                                                <img src="assets/images/icons/ico/blockchain.svg" alt=""/>
+                                                <img src={require("./assets/images/icons/ico/blockchain.svg")} alt=""/>
                                                 <div>
                                                     <span className="event-title">Chain Beta release</span>
                                                     <small>November 25th, 2018</small>
@@ -891,7 +898,7 @@ class Home extends Component {
                                 {/* <!-- Side feature --> */}
                                 <div className="side-feature-content">
                                     {/* <!-- Title --> */}
-                                    <h3 className="title is-4 is-light"><img src="assets/images/icons/ico/bitnetwork.svg" alt=""/> <span>Track everything with the App</span></h3>
+                                    <h3 className="title is-4 is-light"><img src={require("./assets/images/icons/ico/bitnetwork.svg")} alt=""/> <span>Track everything with the App</span></h3>
                                     {/* <!-- Divider --> */}
                                     <div className="divider is-long"></div>
                                     <p className="is-light">Viderer malorum sadipscing cum ei. Eu impetus perfecto sit, no sea labore detraxit. Primis mediocrem necessitatibus an vis. Eu impetus perfecto sit, no sea labore detraxit.</p>
@@ -906,7 +913,7 @@ class Home extends Component {
                             </div>
                             {/* <!-- Featured image --> */}
                             <div className="column is-7">
-                                <img className="side-feature" src="assets/images/illustrations/krypton-app.svg" alt=""/>
+                                <img className="side-feature" src={require("./assets/images/illustrations/krypton-app.svg")} alt=""/>
                             </div>
                         </div>
         
@@ -948,9 +955,9 @@ class Home extends Component {
                                                 <circle className="circle-chart-circle" stroke-width="1" stroke-dasharray="33,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
                                             </svg>
                                             {/* <!-- Sketeched face --> */}
-                                            <img className="is-sketch" src="assets/images/team/john.svg" alt=""/>
+                                            <img className="is-sketch" src={require("./assets/images/team/john.svg")} alt=""/>
                                             {/* <!-- Real face --> */}
-                                            <img className="is-real" src="assets/images/team/john.jpg" alt=""/>
+                                            <img className="is-real" src={require("./assets/images/team/john.jpg")} alt=""/>
                                         </div>
                                         {/* <!-- Member meta --> */}
                                         <div className="member-info">
@@ -971,8 +978,8 @@ class Home extends Component {
                                                 <circle className="circle-chart-background" stroke-width="1" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
                                                 <circle className="circle-chart-circle" stroke-width="1" stroke-dasharray="33,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
                                             </svg>
-                                            <img className="is-sketch" src="assets/images/team/lucy.svg" alt=""/>
-                                            <img className="is-real" src="assets/images/team/lucy.jpg" alt=""/>
+                                            <img className="is-sketch" src={require("./assets/images/team/lucy.svg")} alt=""/>
+                                            <img className="is-real" src={require("./assets/images/team/lucy.jpg")} alt=""/>
                                         </div>
                                         <div className="member-info">
                                             <h4 className="title is-light is-6 is-tight">Lucy Wong</h4>
@@ -992,8 +999,8 @@ class Home extends Component {
                                                 <circle className="circle-chart-background" stroke-width="1" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
                                                 <circle className="circle-chart-circle" stroke-width="1" stroke-dasharray="33,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
                                             </svg>
-                                            <img className="is-sketch" src="assets/images/team/joshua.svg" alt=""/>
-                                            <img className="is-real" src="assets/images/team/joshua.jpg" alt=""/>
+                                            <img className="is-sketch" src={require("./assets/images/team/joshua.svg")} alt=""/>
+                                            <img className="is-real" src={require("./assets/images/team/joshua.jpg")} alt=""/>
                                         </div>
                                         <div className="member-info">
                                             <h4 className="title is-light is-6 is-tight">Joshua Stevens</h4>
@@ -1020,8 +1027,8 @@ class Home extends Component {
                                                 <circle className="circle-chart-background" stroke-width="1" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
                                                 <circle className="circle-chart-circle" stroke-width="1" stroke-dasharray="33,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
                                             </svg>
-                                            <img className="is-sketch" src="assets/images/team/sara.svg" alt=""/>
-                                            <img className="is-real" src="assets/images/team/sara.jpg" alt=""/>
+                                            <img className="is-sketch" src={require("./assets/images/team/sara.svg")} alt=""/>
+                                            <img className="is-real" src={require("./assets/images/team/sara.jpg")} alt=""/>
                                         </div>
                                         <div className="member-info">
                                             <h4 className="title is-light is-6 is-tight">Sara Jackson</h4>
@@ -1041,8 +1048,8 @@ class Home extends Component {
                                                 <circle className="circle-chart-background" stroke-width="1" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
                                                 <circle className="circle-chart-circle" stroke-width="1" stroke-dasharray="33,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
                                             </svg>
-                                            <img className="is-sketch" src="assets/images/team/mike.svg" alt=""/>
-                                            <img className="is-real" src="assets/images/team/mike.jpg" alt=""/>
+                                            <img className="is-sketch" src={require("./assets/images/team/mike.svg")} alt=""/>
+                                            <img className="is-real" src={require("./assets/images/team/mike.jpg")} alt=""/>
                                         </div>
                                         <div className="member-info">
                                             <h4 className="title is-light is-6 is-tight">Mike Kovalsky</h4>
@@ -1062,8 +1069,8 @@ class Home extends Component {
                                                 <circle className="circle-chart-background" stroke-width="1" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
                                                 <circle className="circle-chart-circle" stroke-width="1" stroke-dasharray="33,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
                                             </svg> */}
-                                            <img className="is-sketch" src="assets/images/team/sandra.svg" alt=""/>
-                                            <img className="is-real" src="assets/images/team/sandra.jpg" alt=""/>
+                                            <img className="is-sketch" src={require("./assets/images/team/sandra.svg")} alt=""/>
+                                            <img className="is-real" src={require("./assets/images/team/sandra.jpg")} alt=""/>
                                         </div>
                                         <div className="member-info">
                                             <h4 className="title is-light is-6 is-tight">Sandra Bernard</h4>
@@ -1107,7 +1114,7 @@ class Home extends Component {
                                 <div className="column is-one-fifth">
                                     <div className="advisor-container has-text-centered">
                                         <div className="photo">
-                                            <img src="assets/images/team/a2.jpg" alt="" data-aos="fade-down" data-aos-delay="300" data-aos-offset="200" data-aos-easing="ease-out-quart"/>
+                                            <img src={require("./assets/images/team/a2.jpg")} alt="" data-aos="fade-down" data-aos-delay="300" data-aos-offset="200" data-aos-easing="ease-out-quart"/>
                                         </div>
                                         <div className="info">
                                             <div className="subtitle is-6 is-light is-compressed">Marysa Vosniak</div>
@@ -1120,7 +1127,7 @@ class Home extends Component {
                                 <div className="column is-one-fifth">
                                     <div className="advisor-container has-text-centered">
                                         <div className="photo">
-                                            <img src="assets/images/team/a3.jpg" alt="" data-aos="fade-down" data-aos-delay="500" data-aos-offset="200" data-aos-easing="ease-out-quart"/>
+                                            <img src={require("./assets/images/team/a3.jpg")} alt="" data-aos="fade-down" data-aos-delay="500" data-aos-offset="200" data-aos-easing="ease-out-quart"/>
                                         </div>
                                         <div className="info">
                                             <div className="subtitle is-6 is-light is-compressed">Glenn Mitchells</div>
@@ -1133,7 +1140,7 @@ class Home extends Component {
                                 <div className="column is-one-fifth">
                                     <div className="advisor-container has-text-centered">
                                         <div className="photo">
-                                            <img src="assets/images/team/a4.jpg" alt="" data-aos="fade-down" data-aos-delay="700" data-aos-offset="200" data-aos-easing="ease-out-quart"/>
+                                            <img src={require("./assets/images/team/a4.jpg")} alt="" data-aos="fade-down" data-aos-delay="700" data-aos-offset="200" data-aos-easing="ease-out-quart"/>
                                         </div>
                                         <div className="info">
                                             <div className="subtitle is-6 is-light is-compressed">Gary Simmons</div>
@@ -1146,7 +1153,7 @@ class Home extends Component {
                                 <div className="column is-one-fifth">
                                     <div className="advisor-container has-text-centered">
                                         <div className="photo">
-                                            <img src="assets/images/team/a5.jpg" alt="" data-aos="fade-down" data-aos-delay="900" data-aos-offset="200" data-aos-easing="ease-out-quart"/>
+                                            <img src={require("./assets/images/team/a5.jpg")} alt="" data-aos="fade-down" data-aos-delay="900" data-aos-offset="200" data-aos-easing="ease-out-quart"/>
                                         </div>
                                         <div className="info">
                                             <div className="subtitle is-6 is-light is-compressed">Olga Broniszewska</div>
@@ -1312,7 +1319,7 @@ class Home extends Component {
                                         <a href="#">
                                             {/* <!-- Featured image --> */}
                                             <div className="featured-image">
-                                                <img src="assets/images/media/post1.svg" alt=""/>
+                                                <img src={require("./assets/images/media/post1.svg")} alt=""/>
                                             </div>
                                             {/* <!-- Content --> */}
                                             <div className="content">
@@ -1325,7 +1332,7 @@ class Home extends Component {
                                                 <div className="post-meta">
                                                     <div className="author-block">
                                                         <div className="image is-32x32">
-                                                            <img src="assets/images/team/john.jpg" alt=""/>
+                                                            <img src={require("./assets/images/team/john.jpg")} alt=""/>
                                                         </div>
                                                         <div className="author-name">by John Cambell</div>
                                                     </div>
@@ -1349,7 +1356,7 @@ class Home extends Component {
                                         <a href="#">
                                             {/* <!-- Featured image --> */}
                                             <div className="featured-image">
-                                                <img src="assets/images/media/post2.svg" alt=""/>
+                                                <img src={require("./assets/images/media/post2.svg")} alt=""/>
                                             </div>
                                             {/* <!-- Content --> */}
                                             <div className="content">
@@ -1362,7 +1369,7 @@ class Home extends Component {
                                                 <div className="post-meta">
                                                     <div className="author-block">
                                                         <div className="image is-32x32">
-                                                            <img src="assets/images/team/joshua.jpg" alt=""/>
+                                                            <img src={require("./assets/images/team/joshua.jpg")} alt=""/>
                                                         </div>
                                                         <div className="author-name">by Joshua Stevens</div>
                                                     </div>
@@ -1386,7 +1393,7 @@ class Home extends Component {
                                         <a href="#">
                                             {/* <!-- Featured image --> */}
                                             <div className="featured-image">
-                                                <img src="assets/images/media/post3.svg" alt=""/>
+                                                <img src={require("./assets/images/media/post3.svg")} alt=""/>
                                             </div>
                                             {/* <!-- Content --> */}
                                             <div className="content">
@@ -1400,7 +1407,7 @@ class Home extends Component {
                                                 <div className="post-meta">
                                                     <div className="author-block">
                                                         <div className="image is-32x32">
-                                                            <img src="assets/images/team/sandra.jpg" alt=""/>
+                                                            <img src={require("./assets/images/team/sandra.jpg")} alt=""/>
                                                         </div>
                                                         <div className="author-name">by Sandra Bernard</div>
                                                     </div>
@@ -1434,15 +1441,15 @@ class Home extends Component {
                             <div className="partners">
                                 {/* <!-- Partner --> */}
                                 <div className="partner-item">
-                                    <img src="assets/images/clients/cryptomarket.svg" alt=""/>
+                                    <img src={require("./assets/images/clients/cryptomarket.svg")} alt=""/>
                                 </div>
                                 {/* <!-- Partner --> */}
                                 <div className="partner-item">
-                                    <img src="assets/images/clients/bitit.svg" alt=""/>
+                                    <img src={require("./assets/images/clients/bitit.svg")} alt=""/>
                                 </div>
                                 {/* <!-- Partner --> */}
                                 <div className="partner-item">
-                                    <img src="assets/images/clients/coin.svg" alt=""/>
+                                    <img src={require("./assets/images/clients/coin.svg")} alt=""/>
                                 </div>
                             </div>
                         </div>
@@ -1472,15 +1479,15 @@ class Home extends Component {
                                 <div className="contact-icons">
                                     {/* <!-- Phone --> */}
                                     <a className="contact-icon" data-aos="fade-up" data-aos-delay="100" data-aos-offset="200" data-aos-easing="ease-out-quart">
-                                        <img className="is-phone" src="assets/images/icons/phone.svg" alt=""/>
+                                        <img className="is-phone" src={require("./assets/images/icons/phone.svg")} alt=""/>
                                     </a>
                                     {/* <!-- Mail --> */}
                                     <a className="contact-icon" data-aos="fade-up" data-aos-delay="300" data-aos-offset="200" data-aos-easing="ease-out-quart">
-                                        <img className="is-phone" src="assets/images/icons/mail.svg" alt=""/>
+                                        <img className="is-phone" src={require("./assets/images/icons/mail.svg")} alt=""/>
                                     </a>
                                     {/* <!-- Telegram --> */}
                                     <a className="contact-icon" data-aos="fade-up" data-aos-delay="500" data-aos-offset="200" data-aos-easing="ease-out-quart">
-                                        <img className="is-telegram" src="assets/images/logo/telegram.svg" alt=""/>
+                                        <img className="is-telegram" src={require("./assets/images/logo/telegram.svg")} alt=""/>
                                     </a>
                                 </div> 
                             </div>
@@ -1538,7 +1545,7 @@ class Home extends Component {
                 {/* <!-- Logo --> */}
                 <div className="footer-logo">
                     <a href="#">
-                        <img className="rotating" src="assets/images/logo/krypton-gradient.svg" alt=""/>
+                        <img className="rotating" src={require("./assets/images/logo/krypton-gradient.svg")} alt=""/>
                         <div className="brand-name">Krypton</div>
                         <div className="brand-subtitle">Blockchain brought to another level</div>
                     </a>
@@ -1602,7 +1609,7 @@ class Home extends Component {
             </div>
             
             {/* <!-- Absolute image --> */}
-            <img className="solar-system" src="assets/images/bg/solar.svg" alt=""/>
+            <img className="solar-system" src={require("./assets/images/bg/solar.svg")} alt=""/>
         </footer>        
         {/* <!-- Core js -->     */}
 
