@@ -4,7 +4,15 @@ import './assets/css/core.css';
 import './assets/fonts/cryptofont/css/cryptofont.min.css';
 import './assets/js/modalvideo/modal-video.min.css';
 import './assets/js/aos/aos.css'
+import AOS from 'aos';
+import Navbar from './navbar';
+
+
 class Ico extends Component {
+    componentDidMount() {
+        AOS.init();
+        AOS.refresh();
+    }
   render() {
     return (
       <div className="Ico">
@@ -34,6 +42,7 @@ class Ico extends Component {
                             <span className="material-highlight"></span>
                             <span className="bar"></span>
                             <label>Email</label>
+                            
                         </div>
                         {/* <!-- Field --> */}
                         <div className="control-material is-primary">      

@@ -4,8 +4,14 @@ import './assets/css/core.css';
 import './assets/fonts/cryptofont/css/cryptofont.min.css';
 import './assets/js/modalvideo/modal-video.min.css';
 import './assets/js/aos/aos.css'
+import AOS from 'aos';
+import Navbar from './navbar';
 
 class BlogSingle extends Component {
+    componentDidMount() {
+        AOS.init();
+        AOS.refresh();
+    }
   render() {
     return (
       <div className="BlogSingle">
@@ -32,7 +38,7 @@ class BlogSingle extends Component {
                     {/* <!-- Landing page Title --> */}
                     <div className="column is-5 is-offset-1 post-caption">
                         <div className="divider"></div>
-                        <h1 className="title is-2 is-light is-semibold is-spaced main-title">What is Cryptomining ?</h1>
+                        <h1 className="title is-2 is-light is-semibold is-spacx`ed main-title">What is Cryptomining ?</h1>
 
                         <div className="author-block">
                             <div className="image is-32x32">
@@ -316,7 +322,7 @@ class BlogSingle extends Component {
 
             <div className="follow-us is-small">
 
-                <div data-aos="fade-up" data-aos-delay="100" data-aos-offset="100" data-aos-easing="ease-out-quart">
+                <div>
                     <a href="#">
                         <svg aria-labelledby="simpleicons-gitlab-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path d="M23.955 13.587l-1.342-4.135-2.664-8.189c-.135-.423-.73-.423-.867 0L16.418 9.45H7.582L4.919 1.263C4.783.84 4.185.84 4.05 1.26L1.386 9.449.044 13.587c-.121.375.014.789.331 1.023L12 23.054l11.625-8.443c.318-.235.453-.647.33-1.024"/>
@@ -324,7 +330,7 @@ class BlogSingle extends Component {
                     </a>
                 </div>
 
-                <div data-aos="fade-up" data-aos-delay="200" data-aos-offset="100" data-aos-easing="ease-out-quart">
+                <div >
                     <a href="#">
                         <svg aria-labelledby="simpleicons-telegram-icon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                             <path d="M9.028 20.837c-.714 0-.593-.271-.839-.949l-2.103-6.92L22.263 3.37"/>
@@ -334,7 +340,7 @@ class BlogSingle extends Component {
                     </a>
                 </div>
 
-                <div data-aos="fade-up" data-aos-delay="300" data-aos-offset="100" data-aos-easing="ease-out-quart">
+                <div >
                     <a href="#">
                         <svg aria-labelledby="simpleicons-messenger-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12 0C5.373 0 0 4.974 0 11.111c0 3.498 1.744 6.614 4.469 8.654V24l4.088-2.242c1.092.3 2.246.464 3.443.464 6.627 0 12-4.975 12-11.11S18.627 0 12 0zm1.191 14.963l-3.055-3.26-5.963 3.26L10.732 8l3.131 3.259L19.752 8l-6.561 6.963z"/>
@@ -342,7 +348,7 @@ class BlogSingle extends Component {
                     </a>
                 </div>
 
-                <div data-aos="fade-up" data-aos-delay="400" data-aos-offset="100" data-aos-easing="ease-out-quart">
+                <div >
                     <a href="#">
                         <svg aria-labelledby="simpleicons-slack-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path d="M9.879 10.995l1.035 3.085 3.205-1.074-1.035-3.074-3.205 1.08v-.017z"/>
@@ -351,7 +357,7 @@ class BlogSingle extends Component {
                     </a>
                 </div>
 
-                <div data-aos="fade-up" data-aos-delay="500" data-aos-offset="100" data-aos-easing="ease-out-quart">
+                <div >
                     <a href="#">
                         <svg aria-labelledby="simpleicons-linkedin-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
