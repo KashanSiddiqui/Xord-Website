@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom'
 
 class Navbar extends Component {
   render() {
@@ -12,10 +13,10 @@ class Navbar extends Component {
             <div className="container">
                 {/* <!-- Brand --> */}
                 <div className="navbar-brand">
-                    <a href="index.html" className="navbar-item">
+                    <Link to="/" className="navbar-item">
                         <img   src={require("./assets/images/logo/krypton-gradient.svg")} alt=""/>
                         <span className="brand-name">Krypton</span>
-                    </a>
+                    </Link>
                     {/* <!-- Responsive toggle --> */}
                     <span className="navbar-burger burger" data-target="cloneNavbarMenu">
                         <span></span>
@@ -28,19 +29,19 @@ class Navbar extends Component {
                     <div className="navbar-end">
                         {/* <!-- Menu item --> */}
                         <div className="navbar-item is-nav-link">
-                            <a className="is-centered-responsive" href="token.html">Token</a>
+                            <Link to = "/token" className="is-centered-responsive">Token</Link>
                         </div>
                         {/* <!-- Menu item --> */}
                         <div className="navbar-item is-nav-link">
-                            <a className="is-centered-responsive" href="ico.html">Ico</a>
+                            <Link to='/ico' className="is-centered-responsive">Ico</Link>
                         </div>
                         {/* <!-- Menu item --> */}
                         <div className="navbar-item is-nav-link">
-                            <a className="is-centered-responsive" href="roadmap.html">Roadmap</a>
+                            <Link to='/roadmap' className="is-centered-responsive">Roadmap</Link>
                         {/* <!-- Menu item --> */}
                         </div>
                         <div className="navbar-item is-nav-link">
-                            <a className="is-centered-responsive" href="blog.html">Media</a>
+                            <Link to = './blog' className="is-centered-responsive" >Media</Link>
                         </div>
                         {/* <!-- Menu item --> */}
                         <div className="navbar-item is-nav-link">
@@ -83,7 +84,7 @@ class Navbar extends Component {
                     <div className="navbar-end">
                         {/* <!-- Menu item --> */}
                         <div className="navbar-item is-nav-link">
-                            <a className="is-centered-responsive" href="token.html">Token</a>
+                            <Link to = './components/token.js' className="is-centered-responsive" >Token</Link>
                         </div>
                         {/* <!-- Menu item --> */}
                         <div className="navbar-item is-nav-link">
