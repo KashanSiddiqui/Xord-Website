@@ -34,6 +34,7 @@ class Ico extends Component {
                             <span className="material-highlight"></span>
                             <span className="bar"></span>
                             <label>Email</label>
+                            
                         </div>
                         {/* <!-- Field --> */}
                         <div className="control-material is-primary">      
