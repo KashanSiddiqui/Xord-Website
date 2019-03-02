@@ -3,13 +3,17 @@ import './assets/css/bulma.css';
 import './assets/css/core.css';
 import './assets/fonts/cryptofont/css/cryptofont.min.css';
 import './assets/js/modalvideo/modal-video.min.css';
-import './assets/js/aos/aos.css'
+import './assets/js/aos/aos.css';
+import AOS from 'aos';
 
 
 
 
 class Home extends Component {
-  render() {
+    componentDidMount() {
+        AOS.init();
+    }
+    render() {
     return (
       <div className="Home">
      {/* <!-- Pageloader --> */}
@@ -27,7 +31,7 @@ class Home extends Component {
                             {/* <!-- Brand --> */}
                             <div className="navbar-brand">
                                 <a href="index.html" className="navbar-item">
-                                    <img className="rotating"  src={require("./assets/images/logo/krypton-gradient.svg")} alt=""/>
+                                    <img   src={require("./assets/images/logo/krypton-gradient.svg")} alt=""/>
                                     <span className="brand-name">Krypton</span>
                                 </a>
                                 {/* <!-- Responsive toggle --> */}
@@ -51,8 +55,8 @@ class Home extends Component {
                                     {/* <!-- Menu item --> */}
                                     <div className="navbar-item is-nav-link">
                                         <a className="is-centered-responsive" href="roadmap.html">Roadmap</a>
-                                    </div>
                                     {/* <!-- Menu item --> */}
+                                    </div>
                                     <div className="navbar-item is-nav-link">
                                         <a className="is-centered-responsive" href="blog.html">Media</a>
                                     </div>
